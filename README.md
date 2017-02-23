@@ -1,2 +1,2 @@
-# binomial_option_pricing
-binomial option pricing with java
+# Binomial option pricing
+Binomial option pricing with java
