@@ -117,6 +117,15 @@ public abstract class Option {
     }
 
     public Double[][] getStock_price() {
+/*
+        for (int i = 0; i <= steps; i++) {
+            for (int j = 0; j <= i; j++) {
+                stock_price[i][j] = spot * Math.pow(up, i - j) * Math.pow(down, j);
+            }
+        }
+        return stock_price;
+    }
+       */
         for (int j = 0; j <= steps; j ++) {
             for (int i = 0; i <= j; i++){
                 stock_price[i][j] = spot * Math.pow(up, j-i) * Math.pow(down, i);
